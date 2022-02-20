@@ -1,0 +1,17 @@
+<div class='page new'>
+	<h1>Add New Entry</h1>
+
+	<%= link_to 'See All Record', '/occurrences'%>
+	<br><br>
+
+	<%= form_for(@occurrence) do |f| %>
+		<%= f.label :antecendent, "Antecedent" %>
+		<%= f.text_area :antecedent %>
+		<br><br>
+		<%= f.submit "Submit", :disable_with => 'Submiting...' %>
+	<% end %>
+</div>
+
+
+
+

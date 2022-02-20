@@ -1,0 +1,22 @@
+<div class='page'>
+	<h1>All Records</h1>
+
+	<%= link_to 'Add New Record', '/occurrences/new'%>
+	<br><br>	
+
+	<table>
+		<thead>
+			<th class="time">Time</th>
+			<th class="ante">Antecedent</th>
+		</thead>
+		<tbody>
+			<% @occurrences.each do |o| %>
+				<tr>
+					<td class="time"><%= o.time %></td>
+					<td class="ante"><%= o.antecedent %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+
+</div>

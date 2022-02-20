@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.page p, 
+.page a,
+.page th,
+.page tr td,
+.page label,
+.page input {
+    font-size: 30px;
+}
+
+.page {
+    border: 1px solid black;
+
+}
+
+#occurrence_antecedent {
+    width:  90%;
+    height:  300px;
+    font-size: 20px;
+}
+
+
+.page table {
+    width:  100%;
+}
+
+.page table, .page table tr td { 
+    margin:  0 auto;
+    border:  1px solid black;
+    border-collapse: collapse;
+ }
+
+ .page table tr:nth-child(even) {
+    background-color:  #CCC;
+ }
+
+  .page table tr:nth-child(odd) {
+    background-color:  #FFF;
+ }
+
+ .time {
+    width:  25%;
+ }
+
+ .ante {
+    width:  75%;
+
+ }
+
+ .new input[type=submit] {
+    width:  80%;
+    height:  60px;
+ }
+
