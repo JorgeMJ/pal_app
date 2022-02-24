@@ -40,6 +40,7 @@ class OccurrencesController < ApplicationController
   end
 
   def delete
+    #Remember to add the 'delete' posibility to each row
     #This will destroy the last one
     @occurrence = Occurrence.last 
 
